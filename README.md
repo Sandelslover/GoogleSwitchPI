@@ -26,7 +26,7 @@ You can share the google sheets privately to a google account of your choise (or
 For allowing access to anyone, you can press the highlighted red arrow and choose "Anyone with the link" and set the privilidges to either editor, viewer or commenter, but i would advise on using viewer.
 Also for keeping the program as light as possible, the preview version of the sheets link should be used in the _google-switch.sh_ -script.
 ## Example
-https://docs.google.com/spreadsheets/d/_random characters_/preview?gid= _your gid_ 
+https://docs.google.com/spreadsheets/d/ _random characters_ /preview?gid= _your gid_ 
 Normally in the link you copy, there will be **edit** in place of **preview** 
 
 
