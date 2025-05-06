@@ -18,6 +18,10 @@ This program is a quick project and as such is not spesifically made to support 
 # About Google sheets and calendar
 You can either make the sheets and calendar public from the settings of both if it doesn't matter that the contents of both are accessible to anyone on the internet. Alternatively you can make an account for the pi and add it to the sheet and calender or log in with the account both of them were created with. Below are some images that will help.
 
+## Sharing in google sheets
+You can share the google sheets privately to a google account of your choise (or make the sheets public) by clicking the blue "share" -button in the corner, which should a window like this below: 
+![image](https://github.com/user-attachments/assets/b5e5a67d-7eb2-4be7-b49c-7af8ed6b5599)
+
 
 
 
@@ -66,3 +70,24 @@ Save the script to /home/pi/google-switch.sh
 
 ## Make it Executable:
   _chmod +x /home/pi/google_switch.sh_
+
+## Move the service file
+Move the service file to _/etc/systemd/system/_ 
+
+## Set permissions 
+  _sudo chmod 644 /etc/systemd/system/google-switch.service_ 
+
+## Enable the service
+  _sudo systemctl enable google-switch.service_
+  And start it:
+  _sudo systemctl start google-switch.service_
+
+# 5. Prevent screen blanking
+
+Edit autostart:
+  _sudo nano /etc/xdg/lxsession/LXDE-pi/autostart_
+
+Add:
+_@xset s off_
+_@xset -dpms_
+_@xset s noblank_
