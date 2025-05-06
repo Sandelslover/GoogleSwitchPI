@@ -43,11 +43,17 @@ If you want the calendar to be public, you can click active _share publicly_ and
 
 # 1. Hardware Requirements
 Raspberry Pi 3 (Model B or B+) or higher.
+
 MicroSD card (8GB or larger, 16GB+ recommended) with Raspberry Pi OS installed.
+
 Power supply/cable (5V, 2.5A micro-USB).
+
 Internet connection (Wi-Fi or Ethernet).
+
 Monitor or TV with HDMI cable (or HDMI-to-VGA adapter if needed).
+
 If installing via ssh keyboard is not needed
+
 Keyboard and mouse for initial setup.
 
 # 2. Install Raspberry Pi OS
