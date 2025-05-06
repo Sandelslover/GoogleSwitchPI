@@ -1,0 +1,15 @@
+[Unit]
+Description=Google Sheets and Calendar Switcher
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=/bin/bash /home/pi/google-switch.sh
+Restart=always
+User=pi
+Group=pi
+WorkingDirectory=/home/pi
+
+[Install]
+WantedBy=graphical.target
