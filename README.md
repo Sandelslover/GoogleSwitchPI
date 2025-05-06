@@ -20,6 +20,7 @@ You can either make the sheets and calendar public from the settings of both if 
 
 ## Sharing in google sheets
 You can share the google sheets privately to a google account of your choise (or make the sheets public) by clicking the blue "share" -button in the corner, which should a window like this below: 
+
 ![image](https://github.com/user-attachments/assets/b5e5a67d-7eb2-4be7-b49c-7af8ed6b5599)
 
 
