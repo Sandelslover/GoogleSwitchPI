@@ -23,13 +23,28 @@ You can share the google sheets privately to a google account of your choise (or
 
 ![image](https://github.com/user-attachments/assets/b5e5a67d-7eb2-4be7-b49c-7af8ed6b5599)
 
+For allowing access to anyone, you can press the highlighted red arrow and choose "Anyone with the link" and set the privilidges to either editor, viewer or commenter, but i would advise on using viewer.
+Also for keeping the program as light as possible, the preview version of the sheets link should be used in the _google-switch.sh_ -script.
+## Example
+https://docs.google.com/spreadsheets/d/_random characters_/preview?gid= _your gid_ 
+Normally in the link you copy, there will be **edit** in place of **preview** 
+
+
+## Sharing in google calendar
+My computer is set in Finnish but the options will be same in your language.
+
+![image](https://github.com/user-attachments/assets/acd9f019-7e35-4f8a-a96f-a612b4b1f331)
+
+Choose the calendar meant for sharing
+If you want to only add an account to have access to the calendar, click on _add people or groups_.
+If you want the calendar to be public, you can click active _share publicly_ and _show all event details_, after which you'll need to click on _create shared link_ and paste it into the _google-switch.sh_ script.
 
 
 
 # 1. Hardware Requirements
 Raspberry Pi 3 (Model B or B+) or higher.
 MicroSD card (8GB or larger, 16GB+ recommended) with Raspberry Pi OS installed.
-Power supply (5V, 2.5A micro-USB).
+Power supply/cable (5V, 2.5A micro-USB).
 Internet connection (Wi-Fi or Ethernet).
 Monitor or TV with HDMI cable (or HDMI-to-VGA adapter if needed).
 If installing via ssh keyboard is not needed
