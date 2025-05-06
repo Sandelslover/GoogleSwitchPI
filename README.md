@@ -1,6 +1,25 @@
 # GoogleSwitchPI
 Program for raspberry pi 3 or higher to switch between google sheets and google calender. Useful for showing project progress or due dates excetera.
 
+# Features
+
+Displays a Google Sheet 
+Displays a Google Calendar
+Switches between the two every 90 seconds.
+2-minute startup delay to stabilize the system.
+Full-screen Chromium kiosk mode with no browser UI.
+Hides mouse cursor for a clean display.
+Autostarts on boot via systemd.
+Lightweight and reliable for continuous operation.
+
+# Important
+This program is a quick project and as such is not spesifically made to support different users by default, so if your raspberry pi username is_different_than "pi", you will need to customize atleast the service script to support your username. Also you will need to manually edit the google-switch.sh script and put your own google calendar and google sheets urls in the marked spots at the start.
+
+# About Google sheets and calendar
+You can either make the sheets and calendar public from the settings of both if it doesn't matter that the contents of both are accessible to anyone on the internet. Alternatively you can make an account for the pi and add it to the sheet and calender or log in with the account both of them were created with. Below are some images that will help.
+
+
+
 
 # 1. Hardware Requirements
 Raspberry Pi 3 (Model B or B+) or higher.
@@ -28,15 +47,22 @@ Set language, timezone and Wi-Fi credentials.
 
 
 # 3. Configure the Raspberry Pi
+## Enable Auto-Login by opening the configuration tool
+  _sudo raspi-config_
 
+Go to System Options > Boot / Auto Login > Desktop Autologin (select for user pi).
+Save and exit.
 
+## Verify Internet:
+Test connectivity:
+  _ping -c 4 google.com_
 
+If no connection, configure Wi-Fi via raspi-config (System Options > Wireless LAN).
 
+# 4. Install the Script
 
-Enable Auto-Login:
+Copy or install the Script:
+Save the script to /home/pi/google-switch.sh
 
-
-
-
-
-Open the configuration tool:
+## Make it Executable:
+  _chmod +x /home/pi/google_switch.sh_
